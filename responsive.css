@@ -1,0 +1,27 @@
+/* celular */
+@media only screen and (max-width:481px){
+    body{
+        background-color: rgb(204, 124, 181);
+        /* background-image: url(./images/forest.jpeg); */
+        height: 100%;
+        color: white;
+    }
+}
+
+/* tablet */
+@media only screen and (max-width:600px){
+    body{
+        background-color: rgb(124, 204, 124);
+        /* background-image: url(./images/forest.jpeg); */
+        height: 100%;
+        color: white;
+    }
+}
+/* Extra large sreens */
+@media only screen and (min-width:1200px){
+    body{
+        /* background-image: url(./images/forest.jpeg); */
+        height: 100%;
+        color: white;
+    }
+}

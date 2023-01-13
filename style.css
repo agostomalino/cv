@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    background-color: white;
+}
+.background{
+    /* background-image: url(./images/forest.jpeg);
+    background-repeat: no-repeat; */
+    /* background-position: 20% 10%; */
+    height: 100vh;
+    color: black;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid black;
+}
+nav{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+}
+.nav a{
+    color: black;
+}
+
+.nav a:hover{
+    color: rgb(213, 201, 210);
+    text-decoration: underline;
+}
+
+main{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid black;
+
+}
+#container-presentacion{
+    display: flex;
+    width: 100vw;
+}
+#main-title{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid black;
+
+}
+
+h1{
+    font-size: 60px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+span{
+    font-size: 20px;
+    letter-spacing: 10px;
+}
+#aside-title{
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: auto;
+    height: 60%;
+}
+
