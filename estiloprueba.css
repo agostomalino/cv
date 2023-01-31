@@ -1,0 +1,174 @@
+/* VARIABLES */
+
+:root{
+
+    /* COLORS */
+    --title-color: #0B0A0A;
+    --text-color: #403A3A;
+    --text-color-light: #707070;
+    --container-color: #FAFAFA;
+    --container-color-alt: #F0EFEF;
+    --body-color: #FCFCFC;
+
+    /* FONT AND TYPOGRAPHY */
+    --body-font:'Open Sans', sans-serif;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+
+    /* FONT WEIGHT */
+    --font-medium:500;
+    --font-semi-bold: 600;
+
+    /* MARGENES */
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+
+    /* Z INDEX */
+    --z-tooltip: 10;
+    --z-fixed:100;
+
+}
+
+/* BASE */
+
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* Variables DARK THEME */
+
+/* BUTTON DARK/LIGHT */
+
+/* FONT SIZE VARIABLES TO SCALE CV */
+
+/* GENERATE PDF BUTTON */
+
+/* CLASSES MODIFIED TO REDUCE SIZE AND PRINT A4 SHEET */
+body{
+    margin: 0 0 var(--header-height) 0;
+    padding: 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1,h2,h3,ul,p{
+    margin: 0;
+}
+
+h1,h2,h3{
+    color:var(--title-color);
+    font-weight: var(--font-medium);
+
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* CLASSES CSS */
+.section{
+    padding: 1.5rem 0;
+}
+
+.section-title{
+
+}
+/* LAYOUT */
+
+
+
+
+
+
+
+body{
+    height: 100%;
+    background-color: white;
+    display: grid;
+
+}
+.background{
+    /* background-image: url(./images/forest.jpeg);
+    background-repeat: no-repeat; */
+    /* background-position: 20% 10%; */
+    height: 100vh;
+    color: black;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid black;
+}
+nav{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+}
+.nav a{
+    color: black;
+}
+
+.nav a:hover{
+    color: rgb(213, 201, 210);
+    text-decoration: underline;
+}
+
+main{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid black;
+
+}
+#container-presentacion{
+    display: flex;
+    width: 100vw;
+}
+#main-title{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid black;
+
+}
+
+h1{
+    font-size: 60px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+span{
+    font-size: 20px;
+    letter-spacing: 10px;
+}
+#aside-title{
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: auto;
+    height: 60%;
+}
