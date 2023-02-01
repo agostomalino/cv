@@ -43,8 +43,11 @@ body{
     color:var(--text-color);
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
-    background: rgb(244,86,122);
-    background: radial-gradient(circle, rgba(244,86,122,1) 0%, rgba(248,143,167,0.15872286414565828) 13%, rgba(255,255,255,1) 100%);
+    /* background: rgb(244,86,122);
+    background: radial-gradient(circle, rgba(244,86,122,1) 0%, rgba(248,143,167,0.15872286414565828) 13%, rgba(255,255,255,1) 100%); */
+    background: rgb(205,94,112);
+    background: radial-gradient(circle, rgba(205,94,112,1) 0%, rgba(244,244,244,0.024269082633053274) 55%);
+
 }
 
 h1,h2,h3,ul,p{
@@ -72,10 +75,10 @@ ul li .nav-link:hover{
 
 .container-all{
     width: 100%;
-    max-width: 62.5rem;
-    margin: 1.25rem auto;
+    max-width: 70rem;
+    margin: 1rem auto;
+    margin-top: 0px;
     display: grid;
-    /* grid-gap: 1.25rem;    20px */
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, auto);
 }
@@ -99,11 +102,9 @@ ul li .nav-link:hover{
 }
 
 .container-all #aside-title{
-    background-color: red;
     grid-column-start: 4;
     grid-column-end: 7;
-    flex-direction: column;
-    align-items: center;
+    display: flex;
     justify-content: center;
     border-style: none solid solid none;
 }
@@ -112,26 +113,46 @@ ul li .nav-link:hover{
     grid-column-start: 1;
     grid-column-end: 4;
     border-style: none solid solid;
+    text-align: justify;
 }
 
 .container-all #skills-idioma{
     grid-column-start: 4;
     grid-column-end: 7;
-    display: flex;
-    align-items:flex-start;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
     border-style: none solid solid none;
 }
 
-.container-all #educacion{
-    grid-column-start: 1;
-    grid-column-end: 7;
-    border-style: none solid solid solid;
-
-}
-
+.container-all #educacion,
 .container-all #experiencia{
     grid-column-start: 1;
     grid-column-end: 7;
     border-style: none solid solid solid;
+    text-align: justify;
+
+}
+
+#about #title-about,
+#educacion #title-education,
+#experiencia #title-experience{
+    width: 100%;
+    padding: 1.5rem;
+    border-bottom-style: solid;
+}
+#p-about{
+    padding: 1.5rem;
+}
+/* ------- ACOMODAR EL GRID DE SKILLS */
+
+div #title-skills,
+div #title-idiomas{
+    padding: 1.5rem;
+    border-bottom-style: solid;
+}
+
+#skills ul,
+#idiomas ul{
+    padding: 1.5rem;
 }
