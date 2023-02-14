@@ -76,7 +76,7 @@ ul li .nav-link:hover{
 .container-all{
     width: 100%;
     max-width: 70rem;
-    margin: 1rem auto;
+    margin: 1rem auto 0;
     margin-top: 0px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -104,6 +104,7 @@ ul li .nav-link:hover{
 .container-all #aside-title{
     grid-column-start: 4;
     grid-column-end: 7;
+    padding:1rem;
     display: flex;
     justify-content: center;
     border-style: none solid solid none;
@@ -126,7 +127,8 @@ ul li .nav-link:hover{
 }
 
 .container-all #educacion,
-.container-all #experiencia{
+.container-all #experiencia,
+.container-all #contacto{
     grid-column-start: 1;
     grid-column-end: 7;
     border-style: none solid solid solid;
@@ -136,7 +138,8 @@ ul li .nav-link:hover{
 
 #about #title-about,
 #educacion #title-education,
-#experiencia #title-experience{
+#experiencia #title-experience,
+section #title-contacto{
     width: 100%;
     padding: 1.5rem;
     border-bottom-style: solid;
@@ -156,3 +159,67 @@ div #title-idiomas{
 #idiomas ul{
     padding: 1.5rem;
 }
+#contacto{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+}
+#ul-contact{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#ul-contact h3{
+    margin-bottom: 6rem;
+}
+ul{
+    font-size: var(--h2-font-size);
+}
+ul li{
+    margin-bottom: 1rem;
+}
+#form-contact{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-style: solid none none solid;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+form div .form-control,
+form .btn{
+    border-radius: 0rem;
+}
+
+#lista-educacion,
+#lista-experiencia{
+    padding: 1.5rem;
+}
+
+#form-contact #titulo-form{
+    margin: 1.2rem 0 0 1rem;
+    font-size: 1.5rem;
+}
+ footer{
+    background-color: black;
+    color: var(--body-color);
+    height: 20vh;
+    padding: 1.5rem;
+}
+
+ /* Button dark light theme */
+
+ footer .change-theme{
+    color: white;
+    font-size: 1.2rem;
+ }
+
