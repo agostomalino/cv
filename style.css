@@ -109,6 +109,10 @@ ul li .nav-link:hover{
     justify-content: center;
     border-style: none solid solid none;
 }
+#aside-title img{
+    max-width: 100%;
+    height: auto;
+}
 
 .container-all #about{
     grid-column-start: 1;
@@ -177,10 +181,10 @@ div #title-idiomas{
 #ul-contact h3{
     margin-bottom: 6rem;
 }
-ul{
+#lista{
     font-size: var(--h2-font-size);
 }
-ul li{
+#lista li{
     margin-bottom: 1rem;
 }
 #form-contact{
@@ -208,6 +212,7 @@ form .btn{
 #form-contact #titulo-form{
     margin: 1.2rem 0 0 1rem;
     font-size: 1.5rem;
+    font-weight: var(--font-semi-bold);
 }
  footer{
     background-color: black;

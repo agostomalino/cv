@@ -1,26 +1,45 @@
 /* celular */
 @media only screen and (max-width:481px){
-    body{
-        background-color: rgb(204, 124, 181);
-        /* background-image: url(./images/forest.jpeg); */
-        height: 100%;
-        color: white;
-    }
-}
 
-/* tablet */
-@media only screen and (max-width:600px){
-    body{
-        background-color: rgb(124, 204, 124);
-        height: 100%;
-        color: white;
+    .container-all #main-title{
+        grid-column-start: 1;
+        grid-column-end: 7;
+        height: 20rem;
     }
+    .container-all #aside-title{
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+
+    .container-all #about{
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+
+    .container-all #skills-idioma{
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+
+    #contacto{
+        grid-column-start: 1;
+        grid-column-end: 7;
+        display:flex;
+        flex-direction: column;
+    }
+     #ul-contact h3{
+        margin-bottom: 1rem;
+     }
+     #form-contact #titulo-form{
+        font-size: 1rem;
+        margin: .5rem;
+     }
 }
-/* Extra large sreens */
-@media only screen and (min-width:1200px){
-    body{
-        /* background-image: url(./images/forest.jpeg); */
-        height: 100%;
-        color: white;
-    }
+/* móviles medianos */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body{
+    background-color: rgb(124, 204, 124);
+    height: 100%;
+    color: white;
+}
 }
