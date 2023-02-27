@@ -34,12 +34,24 @@
         font-size: 1rem;
         margin: .5rem;
      }
+     
 }
 /* móviles medianos */
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  body{
-    background-color: rgb(124, 204, 124);
-    height: 100%;
-    color: white;
-}
+    body{
+        height: 100%;
+    }
+    #contacto{
+        grid-column-start: 1;
+        grid-column-end: 7;
+        display:flex;
+        flex-direction: column;
+    }
+     #ul-contact h3{
+        margin-bottom: 1rem;
+     }
+     #form-contact #titulo-form{
+        font-size: 1rem;
+        margin: .5rem;
+     }
 }
